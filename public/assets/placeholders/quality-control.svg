@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Quality control placeholder</title>
+  <desc id="desc">Replace this placeholder with factory quality control photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#425057" />
+      <stop offset="100%" stop-color="#b9a089" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <rect x="84" y="104" width="1032" height="652" rx="46" fill="#ffffff" fill-opacity="0.12" />
+  <rect x="164" y="214" width="334" height="222" rx="30" fill="#fff8f2" fill-opacity="0.18" />
+  <rect x="550" y="214" width="490" height="116" rx="24" fill="#223238" fill-opacity="0.2" />
+  <rect x="550" y="368" width="318" height="214" rx="24" fill="#fff8f2" fill-opacity="0.18" />
+  <rect x="238" y="498" width="224" height="94" rx="20" fill="#223238" fill-opacity="0.14" />
+</svg>

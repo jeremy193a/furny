@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Lighting placeholder</title>
+  <desc id="desc">Replace this placeholder with decorative lighting photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#404d53" />
+      <stop offset="100%" stop-color="#b7a187" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <circle cx="340" cy="240" r="94" fill="#fff6eb" fill-opacity="0.22" />
+  <circle cx="608" cy="204" r="66" fill="#fff6eb" fill-opacity="0.22" />
+  <circle cx="828" cy="256" r="118" fill="#fff6eb" fill-opacity="0.22" />
+  <rect x="108" y="118" width="984" height="624" rx="44" fill="#ffffff" fill-opacity="0.1" />
+  <rect x="200" y="414" width="800" height="134" rx="24" fill="#213035" fill-opacity="0.16" />
+</svg>

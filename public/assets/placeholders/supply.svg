@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">FF and E supply placeholder</title>
+  <desc id="desc">Replace this placeholder with FF and E or styling item photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b6a52" />
+      <stop offset="100%" stop-color="#d8cab6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <circle cx="940" cy="206" r="152" fill="#fff7ef" fill-opacity="0.2" />
+  <rect x="98" y="118" width="1004" height="622" rx="44" fill="#ffffff" fill-opacity="0.12" />
+  <rect x="206" y="234" width="228" height="228" rx="30" fill="#243238" fill-opacity="0.18" />
+  <rect x="490" y="220" width="168" height="250" rx="28" fill="#fff7ef" fill-opacity="0.16" />
+  <rect x="696" y="260" width="222" height="172" rx="28" fill="#243238" fill-opacity="0.16" />
+  <rect x="248" y="522" width="612" height="90" rx="20" fill="#fff7ef" fill-opacity="0.16" />
+</svg>

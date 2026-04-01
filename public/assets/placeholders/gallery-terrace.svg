@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Terrace placeholder</title>
+  <desc id="desc">Replace this placeholder with terrace or lounge project photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6d7b71" />
+      <stop offset="100%" stop-color="#d7c8ae" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <circle cx="214" cy="192" r="112" fill="#fff6eb" fill-opacity="0.16" />
+  <rect x="98" y="116" width="1004" height="626" rx="44" fill="#ffffff" fill-opacity="0.12" />
+  <rect x="184" y="432" width="832" height="112" rx="24" fill="#233338" fill-opacity="0.18" />
+  <rect x="256" y="268" width="210" height="164" rx="26" fill="#fff6eb" fill-opacity="0.18" />
+  <rect x="762" y="236" width="154" height="196" rx="26" fill="#fff6eb" fill-opacity="0.18" />
+</svg>

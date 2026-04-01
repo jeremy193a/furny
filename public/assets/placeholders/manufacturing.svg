@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing placeholder</title>
+  <desc id="desc">Replace this placeholder with manufacturing or workshop photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4e5c60" />
+      <stop offset="100%" stop-color="#c9ac91" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <rect x="102" y="116" width="996" height="624" rx="44" fill="#ffffff" fill-opacity="0.12" />
+  <rect x="166" y="220" width="258" height="324" rx="34" fill="#fff8f2" fill-opacity="0.15" />
+  <rect x="472" y="200" width="562" height="146" rx="26" fill="#233338" fill-opacity="0.18" />
+  <rect x="472" y="392" width="430" height="170" rx="26" fill="#fff8f2" fill-opacity="0.18" />
+</svg>

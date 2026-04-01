@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Restaurant placeholder</title>
+  <desc id="desc">Replace this placeholder with restaurant seating photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#775340" />
+      <stop offset="100%" stop-color="#cfb59b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <rect x="116" y="126" width="968" height="610" rx="44" fill="#ffffff" fill-opacity="0.12" />
+  <rect x="182" y="282" width="182" height="212" rx="28" fill="#fff8f2" fill-opacity="0.18" />
+  <rect x="420" y="250" width="248" height="244" rx="28" fill="#233338" fill-opacity="0.18" />
+  <rect x="714" y="216" width="198" height="278" rx="28" fill="#fff8f2" fill-opacity="0.18" />
+</svg>

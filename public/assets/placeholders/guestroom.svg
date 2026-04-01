@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Guestroom placeholder</title>
+  <desc id="desc">Replace this placeholder with guestroom furniture photography.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8d5d43" />
+      <stop offset="100%" stop-color="#d8b494" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <rect x="110" y="126" width="980" height="610" rx="42" fill="#fffaf4" fill-opacity="0.16" />
+  <rect x="188" y="228" width="332" height="182" rx="26" fill="#243238" fill-opacity="0.18" />
+  <rect x="612" y="220" width="388" height="274" rx="26" fill="#fffaf4" fill-opacity="0.2" />
+  <rect x="250" y="484" width="662" height="110" rx="24" fill="#fffaf4" fill-opacity="0.16" />
+</svg>

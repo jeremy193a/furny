@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" role="img" aria-labelledby="title desc">
+  <title id="title">Furny logo</title>
+  <desc id="desc">Stylized Furny wordmark.</desc>
+  <g
+    fill="none"
+    stroke="#050806"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="16"
+  >
+    <path d="M30 20 V96" />
+    <path d="M62 20 H106" />
+    <path d="M62 50 H92" />
+
+    <path d="M168 20 V66 Q168 96 194 96" />
+    <path d="M220 20 V66 Q220 96 194 96" />
+
+    <path d="M286 20 V96" />
+    <path d="M318 20 H336 Q352 20 352 36 Q352 52 336 52 H318" />
+    <path d="M318 52 L352 96" />
+
+    <path d="M416 20 V96" />
+    <path d="M416 20 L474 96" />
+    <path d="M474 20 V96" />
+
+    <path d="M522 20 L550 48" />
+    <path d="M578 20 L550 48" />
+    <path d="M550 48 V96" />
+  </g>
+</svg>

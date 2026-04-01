@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Hero showcase placeholder</title>
+  <desc id="desc">Replace this placeholder with a hospitality furniture hero image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b573f" />
+      <stop offset="55%" stop-color="#c69c78" />
+      <stop offset="100%" stop-color="#e7d8c6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="860" fill="url(#bg)" />
+  <circle cx="988" cy="178" r="168" fill="#fff7ef" fill-opacity="0.28" />
+  <circle cx="238" cy="688" r="196" fill="#f2d9c1" fill-opacity="0.24" />
+  <rect x="82" y="104" width="1036" height="652" rx="44" fill="#ffffff" fill-opacity="0.14" />
+  <rect x="142" y="160" width="424" height="210" rx="30" fill="#243238" fill-opacity="0.22" />
+  <rect x="614" y="246" width="380" height="298" rx="34" fill="#fff7ef" fill-opacity="0.18" />
+  <rect x="218" y="438" width="318" height="176" rx="28" fill="#fff7ef" fill-opacity="0.2" />
+</svg>
