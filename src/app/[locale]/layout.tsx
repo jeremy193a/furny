@@ -21,6 +21,28 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Furny Asia | End-to-end Hospitality Furniture",
   description: "Vietnam-based hospitality furniture manufacturing and selected FF&E supply for global projects.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://furny.asia/",
+    siteName: "Furny Asia",
+    title: "Furny Asia | End-to-end Hospitality Furniture",
+    description: "Vietnam-based hospitality furniture manufacturing and selected FF&E supply for global projects.",
+    images: [
+      {
+        url: "/assets/logo/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Furny Asia Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Furny Asia | End-to-end Hospitality Furniture",
+    description: "Vietnam-based hospitality furniture manufacturing and selected FF&E supply for global projects.",
+    images: ["/assets/logo/logo.png"],
+  },
 };
 
 export function generateStaticParams() {
