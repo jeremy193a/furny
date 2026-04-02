@@ -65,10 +65,9 @@ export function Header() {
               aria-label="Select language"
             >
               <option value="en">English</option>
-              {/* <option value="fr">Français</option>
+              <option value="fr">Français</option>
               <option value="ja">日本語</option>
-              <option value="ko">한국어</option> */}
-              
+              <option value="ko">한국어</option>
             </select>
             <Link
               href="/contact"
@@ -113,10 +112,9 @@ export function Header() {
                 className="bg-transparent text-sm font-medium p-2 border border-border rounded"
               >
                 <option value="en">English</option>
-                {/* <option value="fr">Français</option>
+                <option value="fr">Français</option>
                 <option value="ja">日本語</option>
-                <option value="ko">한국어</option> */}
-                
+                <option value="ko">한국어</option>
               </select>
               <Link
                 href="/contact"
