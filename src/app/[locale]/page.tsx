@@ -182,8 +182,8 @@ export default function Home() {
             {[
               { src: "/assets/pic/pic-2.jpg", title: "Soma Riverside Hotel, Phnom Penh, Cambodia" },
               { src: "/assets/pic/pic-6.jpg", title: "Akuna Restaurant, Le Méridien, Ho Chi Minh City, Vietnam" },
-              { src: "/assets/pic/picture-10.jpeg", title: "Bar Son, Le Méridien, Ho Chi Minh, Cambodia" },
-              { src: "/assets/pic/picture-11.jpeg", title: "Le Méridien, Ho Chi Minh, Cambodia" },
+              { src: "/assets/pic/picture-10.jpeg", title: "Bar Son, Le Méridien, Ho Chi Minh, Vietnam" },
+              { src: "/assets/pic/picture-11.jpeg", title: "Le Méridien, Ho Chi Minh, Vietnam" },
               { src: "/assets/pic/pic-3-bis.jpg", title: "Samanea Wellness Resort, Osaom, Cambodia" },
               { src: "/assets/pic/pic-5.jpg", title: "Above Eleven Rooftop Bar, Novotel, Phnom Penh, Cambodia" },
             ].map((project, i) => (
