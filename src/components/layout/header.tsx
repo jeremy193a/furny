@@ -5,14 +5,42 @@ import Image from "next/image";
 import { usePathname, useRouter, Link } from "@/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+
+const LANGUAGES = [
+  { code: 'en', label: 'English', flag: 'gb' },
+  { code: 'fr', label: 'Français', flag: 'fr' },
+  { code: 'ja', label: '日本語', flag: 'jp' },
+  { code: 'ko', label: '한국어', flag: 'kr' },
+];
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [langOpen, setLangOpen] = React.useState(false);
+  const langRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(event.target as Node)) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
   const t = useTranslations("Navigation");
+
+  const currentLang = LANGUAGES.find(l => l.code === locale) || LANGUAGES[0];
+
+  const handleLanguageChange = (nextLocale: string) => {
+    setLangOpen(false);
+    setIsOpen(false);
+    router.replace(pathname, { locale: nextLocale });
+  };
 
   const mainNav = [
     { href: "/", label: t("Home") },
@@ -21,10 +49,40 @@ export function Header() {
     { href: "/projects", label: t("Projects") },
   ];
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value;
-    router.replace(pathname, { locale: nextLocale });
-  };
+  const LanguageSwitcher = () => (
+    <div className="relative" ref={langRef}>
+      <button 
+        onClick={() => setLangOpen(!langOpen)}
+        className="flex items-center gap-2 border border-border rounded-full p-1 pr-2 focus:outline-none hover:bg-secondary transition-colors bg-background"
+        aria-label="Select language"
+      >
+        <div className="w-6 h-6 rounded-full overflow-hidden relative shrink-0">
+          <Image src={`https://flagcdn.com/w40/${currentLang.flag}.png`} alt={currentLang.label} fill className="object-cover" />
+        </div>
+        <span className="text-sm font-medium uppercase">{currentLang.code}</span>
+        <ChevronDown className="w-4 h-4 text-muted-foreground" />
+      </button>
+      {langOpen && (
+        <div className="absolute right-0 mt-2 w-32 bg-background border border-border rounded-lg shadow-lg py-2 z-50">
+          {LANGUAGES.map((lang) => (
+            <button
+              key={lang.code}
+              onClick={() => handleLanguageChange(lang.code)}
+              className={cn(
+                "flex items-center gap-3 w-full px-4 py-2 text-sm text-left hover:bg-secondary transition-colors",
+                locale === lang.code && "text-primary font-medium bg-secondary/50"
+              )}
+            >
+              <div className="w-5 h-5 rounded-full overflow-hidden relative shrink-0">
+                <Image src={`https://flagcdn.com/w40/${lang.flag}.png`} alt={lang.label} fill className="object-cover" />
+              </div>
+              <span className="uppercase">{lang.code}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 
   return (
     <header className="fixed top-0 w-full z-50 glass transition-all duration-300">
@@ -58,18 +116,7 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <select
-              value={locale}
-              onChange={handleLanguageChange}
-              className="bg-transparent text-sm font-medium focus:outline-none border border-border rounded px-2 py-1 cursor-pointer"
-              aria-label="Select language"
-            >
-              <option value="en">English</option>
-              {/* <option value="fr">Français</option>
-              <option value="ja">日本語</option>
-              <option value="ko">한국어</option> */}
-              
-            </select>
+            <LanguageSwitcher />
             <Link
               href="/contact"
               className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
@@ -106,18 +153,8 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-4 border-t border-border flex flex-col space-y-4">
-              <select 
-                value={locale}
-                onChange={handleLanguageChange}
-                className="bg-transparent text-sm font-medium p-2 border border-border rounded"
-              >
-                <option value="en">English</option>
-                {/* <option value="fr">Français</option>
-                <option value="ja">日本語</option>
-                <option value="ko">한국어</option> */}
-                
-              </select>
+            <div className="pt-4 border-t border-border flex flex-col space-y-4 items-start">
+              <LanguageSwitcher />
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
