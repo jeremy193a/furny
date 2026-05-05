@@ -101,6 +101,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ONGOING PROJECTS STRIP */}
+      <section className="py-10 border-b border-border bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center md:text-left">
+            <p className="text-sm font-semibold uppercase tracking-wider text-muted-foreground shrink-0">Ongoing projects</p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-8 md:gap-12">
+              <span className="text-2xl font-bold text-primary">5</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* EXPERTISE SECTION */}
       <section id="expertise" className="py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
