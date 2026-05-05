@@ -43,20 +43,6 @@ export default function Expertise() {
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground leading-relaxed mb-8">
                 {t("HeroDesc")}
               </motion.p>
-              <motion.div variants={fadeIn} className="flex gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-12 items-center justify-center rounded-sm bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
-                >
-                  {t("BtnExplore")}
-                </Link>
-                <Link
-                  href="#manufacturing"
-                  className="inline-flex h-12 items-center justify-center rounded-sm border border-border bg-background px-8 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-secondary"
-                >
-                  {t("HeroEyebrow")}
-                </Link>
-              </motion.div>
             </motion.div>
 
             <motion.div 

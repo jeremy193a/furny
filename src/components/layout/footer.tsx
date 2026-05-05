@@ -53,14 +53,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center space-x-6 text-sm font-medium text-muted-foreground">
-            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-            <Link href="/about" className="hover:text-primary transition-colors">About</Link>
-            <Link href="/expertise" className="hover:text-primary transition-colors">Expertise</Link>
-            <Link href="/projects" className="hover:text-primary transition-colors">Projects</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
-          </div>
+        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-center gap-4">
           <div className="flex items-center space-x-4">
             <a
               href="https://www.linkedin.com/company/furny-asia/?viewAsMember=true"
