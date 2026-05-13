@@ -49,13 +49,13 @@ export default function About() {
               <div className="relative w-full max-w-xs aspect-square rounded-2xl overflow-hidden shadow-2xl group mb-3">
                 <Image
                   src="/assets/pic/jonathan_profile.jpg"
-                  alt="Jonathan Dao, BD Director and co-founder"
+                  alt={t("JonathanTitle")}
                   fill
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   priority
                 />
               </div>
-              <p className="text-sm text-muted-foreground font-medium text-center">Jonathan Dao, BD Director and co-founder</p>
+              <p className="text-sm text-muted-foreground font-medium text-center">{t("JonathanTitle")}</p>
             </motion.div>
           </div>
 

@@ -128,11 +128,11 @@ export default function Home() {
           {/* Project Categories */}
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-16 max-w-5xl mx-auto">
             {[
-              { icon: Bed, label: "Hotel Guestrooms" },
-              { icon: Coffee, label: "Public Areas and Lobbies" },
-              { icon: Utensils, label: "Restaurant and Bars" },
-              { icon: Tent, label: "Outdoor Hospitality Environments" },
-              { icon: Building, label: "Branded Residential Developments" }
+              { icon: Bed, label: t("Cat1") },
+              { icon: Coffee, label: t("Cat2") },
+              { icon: Utensils, label: t("Cat3") },
+              { icon: Tent, label: t("Cat4") },
+              { icon: Building, label: t("Cat5") }
             ].map((cat, i) => (
               <motion.div 
                 key={i}
